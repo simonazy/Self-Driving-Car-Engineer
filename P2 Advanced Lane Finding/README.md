@@ -10,3 +10,5 @@ The goal steps of this project are the following:
 * Determine the curvature of the lane and vehicle position with respect to center.
 * Warp the detected lane boundaries back onto the original image.
 * Output visual display of the lane boundaries and numerical estimation of lane curvature and vehicle position.
+
+![image](https://user-images.githubusercontent.com/56880104/127229321-5f60f69d-c7d9-4c6b-9cb5-c7384d36c21e.png)
