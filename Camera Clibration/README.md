@@ -1,7 +1,9 @@
 # Undistort and Perspective Transform
 
 ```python
+
 # Define a function that takes an image, number of x and y points, camera matrix and distortion coefficients
+
 def corner_unwarp(img,nx,ny,mtx,dist):
   # Use the OpenCV undistort() function to remove distortion
     undist = cv2.undistort(img, mtx, dist, None, mtx)
