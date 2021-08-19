@@ -1,6 +1,11 @@
 # Extended Kalman Filter
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
+## Project Introduction
+
+Now that you have learned how the extended Kalman filter works, you are going to implement the extended Kalman filter in C++. We are providing simulated lidar and radar measurements detecting a bicycle that travels around your vehicle. You will use a Kalman filter, lidar measurements and radar measurements to track the bicycle's position and velocity.
+
+
 ## Overview
 
 Kalman Filter is a mathematical approach of determining the state of the system. It calculates the system's state using a mathematical model of the motion and clarifies the state using the measurement information. For an introduction to Extended Kalman Filters (EKFs), see [here](https://en.wikipedia.org/wiki/Extended_Kalman_filter). 
@@ -9,6 +14,7 @@ Sensor fusion - is a process of combining measurements from different sensors to
 
 ![Kalman_Filters_process_flow](./img/Kalman_Filters_process_flow.jpg)
 Image: Udacity Self-Driving Car Nanodegree  
+
 
 
 ## Basic Build Instructions
