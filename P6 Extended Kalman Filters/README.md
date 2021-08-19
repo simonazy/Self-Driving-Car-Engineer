@@ -85,34 +85,3 @@ Plotting the lissajous figure using the visualization toolkit generates the foll
 As you can see in the visualization, you can barely see the estimate since the ground truth nearly always covers it. The most variation is at the areas where the lissajous figure curves most rapidly. This is not surprising given the nature of the Extended Kalman Filter with the linear nature of its prediction.
 
 <img src="./results/Extended_Kalman_Filters_V01.gif" width="980" alt="Combined Image" />
-
-## Visualisation Tools
-
-Visualization of the output is courtesy of the Jupyter visualization notebook 
-[Sensor Fusion Toolkit](https://github.com/udacity/CarND-Mercedes-SF-Utilities) from the 
-Mercedes team that accompanies the project.
-
-## Editor Settings
-
-We've purposefully kept editor configuration files out of this repo in order to
-keep it as simple and environment agnostic as possible. However, we recommend
-using the following settings:
-
-* indent using spaces
-* set tab width to 2 spaces (keeps the matrices in source code aligned)
-
-## Code Style
-
-Please (do your best to) stick to [Google's C++ style guide](https://google.github.io/styleguide/cppguide.html).
-
-## Results
-
-The resulting videos are in the repo, if you are interested.  
-
-## Contributing
-
-No further updates nor contributions are requested.  This project is static.
-
-## License
-
-Term2_project6_extended_kalman_filters results are released under the [MIT License](./LICENSE)
