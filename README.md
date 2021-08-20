@@ -13,7 +13,9 @@ In this repository I will share the source code of all the projects I have done 
 
 ![image](https://user-images.githubusercontent.com/56880104/127804091-08edf164-ce63-4ad3-a75f-53ce21ad49c4.png)
 
-Check the [certificate](https://confirm.udacity.com/V3AZPEGW)
 
 ### Term 2: Sensor Fusion, Localization, and Control 
+
+Check the [certificate](https://confirm.udacity.com/V3AZPEGW)
+
 
