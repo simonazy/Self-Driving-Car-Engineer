@@ -5,6 +5,14 @@
 
 In this project you will implement a 2 dimensional particle filter in C++. Your particle filter will be given a map and some initial localization information (analogous to what a GPS would provide). At each time step your filter will also get observation and control data.
 
+The flowchart below represents the steps of the particle filter algorithm as well as its inputs.
+
+![image](https://user-images.githubusercontent.com/56880104/132380836-e27b6420-b410-4eef-8364-56cf13162f7d.png)
+
+The pseudo code steps correspond to the steps in the algorithm flow chart, initialization, prediction, particle weight updates, and resampling. 
+
+![image](https://user-images.githubusercontent.com/56880104/132381109-7e6a91a4-acf1-40f1-a90d-b18173ad1291.png)
+
 
 ## Basic Build Instructions
 
