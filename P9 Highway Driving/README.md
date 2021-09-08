@@ -7,7 +7,6 @@ The following explanation is the Udacity description of the Path-Planning projec
 
 **The model documentation of my [solution](README_path_planning.md).**
 
-、
    
 ### Simulator.
 You can download the Term3 Simulator which contains the Path Planning Project from the [releases tab (https://github.com/udacity/self-driving-car-sim/releases).
