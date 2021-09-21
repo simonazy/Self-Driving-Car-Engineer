@@ -98,16 +98,6 @@ Like topics, services allow the passing of messages between nodes. However, unli
 The perception subsystem dynamically classifies the color of traffic lights in front of the vehicle. In the given simulator and test site environment, the car faces a single traffic light or a set of 3 traffic lights in the same state (green, yellow, red, none).
 Thankfully due to the recent advancements in Deep Learning and the ease of use of different Deep Learning Frameworks like Caffe and TensorFlow that can utilize the immense power of GPUs to speed up the computations, this task has become really simple. Here traffic light classification is based on pre-trained on the COCO dataset model [ssd_mobilenet_v1_coco](http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_11_06_2017.tar.gz) from https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md
 
-But first we have to gather our training data. The simulator images look something like this:
-
-|![r00000059](./train/r00000059.jpg) | ![y00000042](./train/y00000042.jpg) |![g00003403](./train/g00003403.jpg) |
-| :---:         |     :---:      |     :---:      |
-
-While the images from the test lot look something like this:
-
-|![r2000187](./train/r2000187.jpg)|![y3000788](./train/y3000788.jpg) |![g1000064](./train/g1000064.jpg) |
-| :---:         |     :---:      |     :---:      |
-
 The training data was a combination of simulator images and Udacity track images so that the classifier would be able to generalize and manage also the real test track. The total number of training features used was 3730.
 
 All the images where manually annotated with the open source tool [LabelImg](https://github.com/tzutalin/labelImg). For training the model with the API, we first need to convert our data into the TFRecord format. This format basically takes your images and the yaml file of annotations and combines them into one that can be given as input for training. You can find everything you need to know on the [tensorflow/model](https://github.com/tensorflow/models/tree/master/research/object_detection) Github page.
