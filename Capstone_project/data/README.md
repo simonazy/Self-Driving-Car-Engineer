@@ -127,7 +127,7 @@ TensorFlow team also provides sample config files on their repo for setting up a
 The advantage of the second model is a higher accuracy at the risk of being to slow for a real time application in a self driving car. The first model is less accurate but pretty much faster. In the end this did the job.
 
 To train the models the num_classes were adjusted to 4, all path for the model checkpoint, the train and test data files as well as the label map. An important thing is to reduce the max detections per class to 50 or less. In terms of other configurations like the learning rate, batch size and many more, their default settings were used.
-The data_augmentation_option is very interesting. A full list of options can be found [here](https://github.com/tensorflow/models/blob/a4944a57ad2811e1f6a7a87589a9fc8a776e8d3c/object_detection/builders/preprocessor_builder.py) (see PREPROCESSING_FUNCTION_MAP). Augmentation was used and included the following random transformations:  
+The data_augmentation_option is very interesting. A full list of options can be found [here](https://github.com/tensorflow/models/blob/a4944a57ad2811e1f6a7a87589a9fc8a776e8d3c/object_detection/builders/preprocessor_builder.py).Augmentation was used and included the following random transformations:  
 
   - RGB to Gray  
   - Width/Height shift
@@ -176,20 +176,6 @@ Throttle is controlled by a linear PID by passing in the velocity cross-track-er
 #### Brake
 
 If a negative value is returned by the throttle PID, it means that the car needs to decelerate by braking. The braking torque is calculated by the formula `(vehicle_mass + fuel_capacity * GAS_DENSITY) * wheel_radius * deceleration`.
-
-## Results
-
-Here a short cutout from the simulator track is showing the performance of the self-driving car.
-
-<p align="center">
-  <img src="./results/system_integration_project.gif" width="640">
-</p>
-
-The resulting [videos](./results/system_integration_project.mp4) are in the repo, if you are interested.  
-
-## Contributing
-
-No further updates nor contributions are requested.  This project is static.
 
 ## License
 
