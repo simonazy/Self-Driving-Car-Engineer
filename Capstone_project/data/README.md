@@ -147,12 +147,6 @@ While the images from the test lot are classified as follows:
 
 The ROS traffic light detector is implemented in node `tl_detector` in classes `TLDetector` and `TLClassifier`. `TLDetector` is responsible for finding a nearest traffic light position and calls `TLClassifier.get_classification` with the current camera image. `TLClassifier` uses the SSD MobileNet model to classify the traffic light color (red, yellow, green, none). If at least 2 consecutive images were classified as red then `TLDetector` publishes the traffic light waypoint index in the `/traffic_waypoint` topic.
 
-Here in the video from the test lot the classification results are depicted:
-
-<p align="center">
-  <img src="./results/loop_with_traffic_light_ssd_inception_coco_frz_ynb_C_021_th75.gif" width="640">
-</p>
-
 ### Waypoint Updater
 
 As the vehicle moves along a path, the waypoint updater is responsible for making changes to the planned path. Waypoint updater publishes the next 75 waypoints ahead of the car position, with the velocity that the car needs to have at that point. Each 1/20 seconds, it does:
